@@ -1,0 +1,22 @@
+h1 {
+    color: #655ec2;
+}
+
+div {
+    color: white;
+    height: 200px;
+    width: 500px;
+    background-color: #008cb4;
+    border: 5px solid #ada9bb;
+    margin: 5px;
+    border-radius: 10px;
+}
+
+button {
+    background-color: #009679;
+    height: 30px;
+    width: 80px;
+    border-radius: 10px;
+    font-size: 15px;
+    padding: 2px;
+}
