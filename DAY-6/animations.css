@@ -1,0 +1,39 @@
+.box {
+  height: 180px;
+  width: 300px;
+  background-color: pink;
+
+  animation-name: bgcolorAnimate;
+  animation-duration: 3s;
+  animation-timing-function: ease-in;
+  animation-delay: 0;
+  animation-iteration-count: 3;
+  animation-direction: alternate;
+}
+
+@keyframes widthAnimate {
+  from {
+    width: 10px;
+  }
+  to {
+    width: 400px;
+  }
+}
+
+@keyframes fontAnimation {
+  from {
+    font-size: 20px;
+  }
+  to {
+    font-size: 40px;
+  }
+}
+
+@keyframes bgcolorAnimate {
+  from {
+    background-color: green;
+  }
+  to {
+    background-color: yellow;
+  }
+}
