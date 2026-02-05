@@ -9,3 +9,8 @@ console.log(firstName.length);
 console.log(firstName[5]);
 
 console.log("apnacollege" + 123);
+
+let empty = "";
+console.log(empty.length);
+let space = " ";
+console.log(space.length);
