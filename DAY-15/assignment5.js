@@ -70,3 +70,5 @@ function random(start, end) {
     console.log(rand);
 }
 random(start, end);
+
+
