@@ -39,3 +39,5 @@ object which contains all the keys and values of the first object and second obj
 
 const mergeObjects = (obj1,obj2) => ({...obj1,...obj2});
 console.log(mergeObjects({a:1,b:2},{c:3,d:4})); //{a:1,b:2,c:3,d:4}
+
+
