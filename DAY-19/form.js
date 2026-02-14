@@ -12,3 +12,4 @@ form.addEventListener("submit", function(event) {
 
     alert(`Hi ${user.value}, your password is set to ${pass.value}`);
 });
+
