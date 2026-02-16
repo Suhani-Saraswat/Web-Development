@@ -8,3 +8,28 @@
         failure();
     }
 }
+
+saveToDb("Apna College", 
+    () => {
+        console.log("success : data saved! ");
+        saveToDb("Hello", 
+            () => {
+                console.log("success2 : data 2 saved! ");
+                saveToDb("Suhani", 
+                    () => {
+                        console.log("success3 : data 3 saved! ")
+                    },
+                    () => {
+                        console.log("failure3 : weak connection. data 3 not saved! ");
+                    }
+                );
+            },
+            () => {
+                console.log("failure2 : weak connection. data 2 not saved! ");
+            }
+        );
+    }, 
+    () => {
+        console.log("failure : weak connection. data not saved! ");
+    }
+); */
