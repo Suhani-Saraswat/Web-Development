@@ -46,3 +46,23 @@ function saveToDb(data) {
         }
     });
 }
+
+saveToDb("apna college")
+    .then((result) => {
+        console.log("data 1 saved");
+        console.log("result of promise: ", result);
+        return saveToDb("hello world");
+    })
+    .then((result) => {
+        console.log("data 2 saved");
+        console.log("result of promise: ", result);
+        return saveToDb("Suhani")
+    })
+    .then((result) => {
+        console.log("data 3 saved");
+        console.log("result of promise: ", result);
+    })
+    .catch((error) => {
+        console.log("promise was rejected");
+        console.log("error of promise: ", error);
+    });
