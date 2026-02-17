@@ -25,3 +25,13 @@ const disableButtons = () => {
   //enable popup
   popupRef.classList.remove("hide");
 };
+
+//Enable all buttons (For New Game and Restart)
+const enableButtons = () => {
+  btnRef.forEach((element) => {
+    element.innerText = "";
+    element.disabled = false;
+  });
+  //disable popup
+  popupRef.classList.add("hide");
+};
