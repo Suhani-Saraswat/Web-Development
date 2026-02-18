@@ -42,3 +42,12 @@ equal.addEventListener("click", () => {
     alert("Invalid Input");
   }
 });
+
+//Clear Whole Input
+clear.addEventListener("click", () => {
+  input.value = "";
+});
+//Erase Single Digit
+erase.addEventListener("click", () => {
+  input.value = input.value.substr(0, input.value.length - 1);
+});
