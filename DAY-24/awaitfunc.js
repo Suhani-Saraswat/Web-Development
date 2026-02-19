@@ -27,3 +27,12 @@ function changeColor(color, delay) {
         }, delay);
     }); 
 }
+
+async function change() {
+    await changeColor("red", 1000);
+    await changeColor("orange", 1000);
+    await changeColor("green", 1000);
+    changeColor("blue", 1000);
+}
+
+change();
