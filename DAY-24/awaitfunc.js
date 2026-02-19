@@ -7,3 +7,11 @@ function getNum() {
         }, 1000);
     });
 }
+
+async function demo() {
+    await getNum();
+    await getNum();
+    await getNum();
+    await getNum();
+    getNum();
+}
