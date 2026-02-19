@@ -12,3 +12,4 @@ async function getFacts() {
         console.log("error - ", e);
     }
 }
+
