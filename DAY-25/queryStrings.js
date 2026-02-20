@@ -20,3 +20,13 @@ function show(colArr) {
         list.appendChild(li);
     }
 }
+
+async function getColleges(country) {
+    try {
+        let res = await axios.get(url + country);
+        return res.data;
+    } catch (e) {
+        console.log("error : ", e);
+        return [];
+    }
+}
