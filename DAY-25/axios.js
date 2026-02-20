@@ -6,3 +6,6 @@ btn.addEventListener("click", async () => {
     let p = document.querySelector("#result");
     p.innerText = fact;
 });
+
+let url = "https://catfact.ninja/fact";
+
